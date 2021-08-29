@@ -12,7 +12,7 @@ async function getData() {
     var inn = inp.value;
    
    
-    const url="http://api.openweathermap.org/data/2.5/weather?q="+inn+"&units=metric&APPID=084bcacee012feaf3cbf41d20ddc0fbd";
+    const url="https://api.openweathermap.org/data/2.5/weather?q="+inn+"&units=metric&APPID=084bcacee012feaf3cbf41d20ddc0fbd";
     const result = await fetch(url);
     const data = await result.json();
     console.log(data.name);
