@@ -1,0 +1,147 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.main {
+
+    background: url('android_weather_app.webp');
+    background-repeat: round;
+    height: 100vh; 
+   
+}
+
+
+
+.container {
+    display: block;
+    text-align: center;
+    min-height: 25rem;
+    background: #f7f7f7d6; 
+    border-radius: 1rem;
+    min-width: 93vmin;
+    max-width: 32vmax;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform : translate(-50%,-50%) ;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+#text {
+    
+    border: 0;
+    background-color: transparent;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 17px;
+    /* height: 2rem; */
+    outline: none;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    max-width: 14rem;
+ 
+
+}
+
+#text:focus
+{
+    border-bottom:1px solid rgb(29, 28, 28);
+}
+
+
+
+button {
+    background-color: rgb(12, 8, 240);
+    outline: 0;
+    border: 0;
+    color: rgb(255, 255, 255);
+    width: 5rem;
+    height: 2rem;
+    border-radius: 6.8px;
+    cursor: pointer;
+    
+
+}
+
+
+button:hover {
+    background-color: rgb(3, 25, 126);
+}
+
+
+
+.api {
+
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+    font-family: 'Noto Sans JP', sans-serif;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+.cel
+{
+    grid-column: 1;
+    margin:auto;
+    padding-left: 1rem;
+}
+
+#humi {
+    justify-self: center;
+   
+}
+
+#heading {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: italic;
+    padding-top: 2rem;
+    font-size: x-large;
+    grid-column: 1;
+
+   
+
+}
+
+#icon
+{
+    grid-column: 2;
+}
+
+#cel {
+
+ 
+    font-size: 4rem;
+}
+
+
+@media screen and (max-width: 850px)
+{
+
+#cel{
+    font-size: 3.5rem !important;
+}
+
+#heading
+{
+    padding-left: 1rem !important;
+}
+
+#humi
+{
+    padding-top: 3.5rem !important;
+}
+
+}
