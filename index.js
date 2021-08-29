@@ -26,7 +26,7 @@ async function getData() {
     //     "<br> Wind: "+data.wind.speed+
     //     "<br><di v id='icon'><img src='http://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png'></di>";
 
-    cel.innerHTML="<span id='cel'>"+data.main.temp+"&deg;C</span>"+" <span><img  id='icon' src='http://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png'></span>";
+    cel.innerHTML="<span id='cel'>"+data.main.temp+"&deg;C</span>"+" <span><img  id='icon' src='https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png'></span>";
     // cel.style.
 humi.innerHTML="<div>Humidity: "+ data.main.humidity +"<br><span>Feels like:" +data.main.feels_like+"&deg;C</span><br><span>Wind speed: "+data.wind.speed+" mph</div>"
 head.innerHTML="<span id='headd'>"+data.name+", "+data.sys.country+"</span><br><span id='desc'>"+data.weather[0].main+" - "+data.weather[0].description+"</span>";
